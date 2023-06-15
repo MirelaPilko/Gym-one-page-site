@@ -1,0 +1,616 @@
+ * { margin:0; padding:0; box-sizing:border-box; }
+	
+	html,body {
+		width:100%;
+		height:100%;
+		margin:0;
+		padding:0;
+		overflow-x:hidden
+	}
+	
+	body {
+		Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+		background-color:rgb(0, 0, 0);	
+	}
+	
+	header {
+		position:relative;
+		background-color:rgb(0, 0, 0);
+	}
+	
+	.logo {
+		visibility:hidden;
+		position:absolute; 
+		left:2%; 
+		top:5px;
+	}
+	
+	.responsive {
+     width: 100%;
+     height: auto;
+    }
+	
+	h2 {
+		font-weight:normal;
+		text-align:center;
+		color:rgb(173, 8, 8);
+		font-size:1.8em;
+		text-shadow:1px 1px 1px rgb(0, 0, 0);
+	}
+	
+	h3 {
+		font-weight:normal;
+		padding-left:30px;
+	    color:rgb(178, 5, 5);
+		font-size:1.3em
+	}
+	
+	p {
+		color:rgb(198, 203, 204);
+	}
+
+	hr{
+		width:70%; 
+		height: 0; 
+		border: 0; 
+		border-top: 1px solid #7E0000; 
+		margin-bottom:40px; 
+		background-color: #7E0000; 
+		margin-left: 15%;
+		
+	   }  
+	
+    div#grid {
+	  display:grid;
+	  width:100vw;
+	  height:100vh;
+	  grid-template-columns: repeat(12,1fr);
+	  grid-template-rows: auto auto auto auto auto auto;
+	  grid-gap: 10px;
+	}
+	
+	img {
+		padding-bottom:15px;
+	}
+	
+	.container {
+      position: relative;
+      width: 100%;
+    }
+	
+	.overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #7E0000;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: .5s ease;
+    }
+	
+	.container:hover .overlay {
+      height: 100%;
+    }
+	
+	.text {
+      white-space: nowrap; 
+      color: rgb(222, 223, 223);
+      font-size: 20px;
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+	
+	aside#coffee {
+		background-color:#353535; 
+		text-align:justify;
+		padding:30px;
+		margin-top:30px;
+	}
+	
+	.coffeeimg {
+		text-align:center;
+		width: 100%;
+        height: auto;
+	}
+	
+	main {
+	  display:grid;
+	  grid-template-columns: 1fr;
+	  grid-template-rows: auto;
+	  text-align:justify;
+	  padding:20px;
+	  margin:20px;
+	}
+	
+	#mission {
+       margin-bottom:5px;
+	}
+	
+	.missiontext {
+	  font-size:1em;
+	  font-style:italic;
+	}
+	
+	div.divtext {
+	   display:inline-block;
+	   width:100%;
+	   height:auto;
+	   color:rgb(188, 188, 188);
+	}
+	
+	#staff {
+		text-align:justify;
+	}
+	
+	#tehno {
+		text-align:justify;
+	}
+	
+	#weights {
+		text-align:justify;
+	}
+	
+	#pool {
+		text-align:justify;
+	}
+	
+	#membership {
+	  padding:30px;
+	  background-color:rgb(22, 20, 20);
+	  margin-left:20px;
+	  margin-right:20px;
+	}
+	
+	table {
+		width:95%;
+		margin: 0 auto;
+	}
+	
+	td {
+		border:1px solid rgb(86, 87, 87);
+		padding:8px;
+		font-size:0.9em;
+		color:rgb(189, 189, 189);
+	}
+	
+	.location {
+		color:#f9e1e1;  
+		font-size:0.9em;
+		padding-left:30px
+	}
+	
+	.hours {
+		border:none;
+		padding:2px;
+		font-size:0.9em;
+		color:#f9e6e6;
+		padding-left:20px;
+	}
+	
+	span {
+		font-weight:bold;
+	}
+	
+	#classes {
+	  text-align:justify;
+	  padding:30px;
+	  background-color:#353535;
+	  margin-left:20px;
+	  margin-right:20px;
+	}
+	
+	td.classes {
+	   font-weight:bold;
+	   font-style:italic;
+	   background-color: #7e2020;
+	}
+
+	td.classes2 {
+		 background-color: #676464;
+	}
+	
+	p.lighttext { 
+	   color:rgb(237, 237, 237);
+	   text-align:center;
+	   font-size:1em;
+	}
+	
+	p.graytext {
+	   color:rgb(143, 93, 93);
+	   text-align:center;
+	   font-size:1em;
+	}
+	
+	div.membership {
+		border:3px solid #343434;
+		color:rgb(210, 210, 210);
+		padding:5px;
+		line-height:170%;
+	}
+	
+	td.membership {
+		color:rgb(245, 234, 234);
+		border: 2px solid #343434;
+		padding:5px;;
+		background-color:#504e4e ;
+	}
+	
+	p.membership {
+		color:rgb(222, 216, 216);
+		font-size:1em;
+		margin-left: 4%;
+	}
+	
+	.membershipinc {
+		text-align:center;
+		color:rgb(222, 216, 216);
+		font-size:1em;
+		background-color: #7e2020;
+	}
+	
+	.year {
+	  font-size:0.8em;
+	  font-weight:bold;
+	  
+	}
+	
+	nav {
+	   display: flex;
+	   flex-direction: row;
+	   flex-wrap: wrap;
+	   position:absolute;
+	   top:95%;
+	   left:3%;
+	}
+	
+	nav > a {
+	  margin-left:8px;
+	  font-size:0.9em;
+	  text-shadow:1px 1px 2px black;
+	  color:rgb(216, 216, 216);
+	 }
+	
+	a {
+	  color:rgb(120, 120, 120);
+	  text-decoration:none;
+	}
+	
+	a:hover {
+	  color:rgb(255, 1, 1);
+    }
+	
+	a:active {
+	  color:#850606;
+	}
+	
+	form { 
+	 margin: auto;
+	}
+	
+	#form {
+	  background-color:white;
+	  padding:15px;	 
+      margin-bottom:15px;
+      margin-top:15px;	  
+	}
+	
+	input {
+      padding:10px;
+	  margin:5px;
+      border:0;
+      box-shadow: 7px 7px 25px 1px LightGray;
+	  border-radius:18px;
+	  width:75%;
+    }
+	
+	input[type=submit] {
+		background-color:rgb(127, 28, 28);
+		color:white;
+	}
+	
+	input[type=submit]:hover {
+		background-color:#cc0000;
+	}
+	
+	input:hover {
+	  box-shadow: 7px 7px 25px 1px Gray;
+	}
+
+	.cursor{
+		cursor: pointer;
+	}
+	
+	footer {
+	  text-align:center;
+	  padding:20px;
+	  color:rgb(117, 121, 122);
+	  font-size:0.9em;
+	  word-spacing:15px;
+	  line-height: 25px;
+	}
+	
+	header, main, aside, section, footer {
+	  grid-column: span 12;
+	}
+	
+	
+	@media screen and (min-width:600px) and (max-width:992px) {
+	
+	 div#grid {
+	   grid-template-rows: auto auto auto auto auto auto;
+	 }  
+	  
+	main {
+	   grid-column: span 8;
+	   grid-gap:12px;
+	   margin:5px;
+	}
+	
+	.hours {
+        padding: 0.2em;
+        border: none;
+	}
+	
+	 p {
+	  font-size:2em;
+	  color:rgb(117, 121, 122)
+	}
+	  
+	div.divtext {
+	   display:inline-block;
+	   width:210px;
+	   height:auto;
+	   font-size:0.9em;
+	   margin-left:5px;
+	   margin-right:5px;
+	}
+	
+	.container {
+      width: 220px;
+    } 
+	
+	#mission{
+	   grid-column: span 8;
+	   text-align:center;
+	   margin:15px;
+	   padding-right:20px;
+	}
+	  
+	#staff{
+	  grid-column: span 2;
+	}
+	  
+	#tehno{
+	  grid-column: span 2;
+	}
+	  
+	#weights{
+	  grid-column: span 2;
+	  margin-left:12px;
+	}
+	  
+	#pool{
+	  grid-column: span 2;
+	  margin-left:17px;
+	}
+	  
+	#classes {
+		grid-column: span 8;
+		margin-left:15px;
+	    margin-right:10px;
+	}
+	  
+	#membership {
+		grid-column: span 8;
+		margin-left:15px;
+	    margin-right:10px;
+	} 
+	  
+	aside { 
+	  grid-column: span 4;
+	  padding:1px;
+	  margin-right:10px;
+	}
+	 
+	nav {
+	   display: flex;
+	   flex-direction: row;
+	   flex-wrap: wrap;
+	   position:absolute;
+	   top:92%;
+	   left:17%;
+	}
+	
+	nav > a {
+	  margin-left:30px;
+	  font-size:1.3em;
+	  color:rgb(199,215,202);
+	} 
+	
+	form { 
+	 margin-left:15%;
+	 width:80%;
+	}
+	 
+	}
+	
+	
+	@media screen and (min-width:992px) and (max-width:1280px){ 
+	
+	 div#grid {
+	    grid-template-rows: auto auto auto auto auto;
+	} 
+	 
+	main {
+	    grid-column: span 8;
+		grid-gap:10px;
+		margin:5px;
+	}
+	  
+	.logo {
+		visibility: visible; 
+		position:absolute; 
+		left:3%; 
+		top:4px;
+	 }
+	
+	div.divtext {
+	   display:inline-block;
+	   width:190px;
+	   height:auto;
+	   font-size:0.9em;
+	   margin-left:5px;
+	   margin-right:5px;
+	}
+	
+	.container {
+      width: 190px;
+    }
+	  
+	#mission{
+	  grid-column: span 8;
+	  text-align:center;
+	  padding-right:40px;
+	}
+	  
+	#staff{
+	  grid-column: span 2;
+	}
+	  
+	#tehno{
+	  grid-column: span 2;
+	}
+	  
+	#weights{
+	  grid-column: span 2;
+	  position:relative;
+	  bottom:120px;
+	}
+	  
+	#pool{
+	  grid-column: span 1;
+	}
+	  
+	  
+	#classes {
+		grid-column: span 8;
+	}
+	  
+	#membership {
+		grid-column: span 8;
+	} 
+	  
+	aside { 
+	  grid-column: span 4;
+	}
+	 
+	nav {
+	   display: flex;
+	   flex-direction: row;
+	   flex-wrap: wrap;
+	   position:absolute;
+	   top: 5px;
+       left:17%;
+	}
+	
+	 nav > a {
+	  margin-left:6px; 
+	  margin-top:7px;
+	  font-size:1em;
+	  color:white;
+	  padding:5px;
+	}
+	 
+	 form { 
+	 margin-left:25%;
+	 width:80%
+	}
+	
+	#form {
+	  background-color:white;
+	  padding:20px;
+	}
+	
+	input {
+      padding:10px;
+	  margin:5px;
+      border:0;
+      box-shadow: 7px 7px 25px 1px LightGray;
+	  border-radius:18px;
+	  width:55%;
+    }
+	
+	}
+	
+	
+	@media screen and (min-width:1280px){
+		
+	main {
+	    grid-column: span 8 ;
+		grid-gap:5px;
+		margin:5px;
+	}	
+		
+	.logo {
+		visibility: visible; 
+		position:absolute; 
+		left:4%;
+		top:10px;
+	 }	
+	
+		
+	#staff{
+	  grid-column: span 1;
+	}
+	  
+	#tehno{
+	  grid-column: span 1;
+	}
+	  
+	#weights{
+	  grid-column: span 1;
+	  position:static;
+	}
+	  
+	#pool{
+	  grid-column: span 1;
+	 }
+	  
+	 aside { 
+	  grid-column: span 4;
+	} 
+	  
+	nav {
+	   display: flex;
+	   flex-direction: row;
+	   flex-wrap: wrap;
+	   position:absolute;
+	   top:10px;
+       left:15%;
+	}
+	
+	nav > a {
+	  margin:10px; 
+	  font-size:1.2em;
+	  color:white;
+	}
+	
+	#form {
+	  background-color:white;
+	  padding-bottom:50px;	
+	  padding-top:50px;
+	}
+	
+    form { 
+	 margin-left:25%;
+	 width:70%
+	}
+	
+	}
+	
